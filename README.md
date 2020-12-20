@@ -52,3 +52,16 @@ Copy the output to clipboard
 Use x64dbg Binary Paste (right click in disasm)
 
 ![Alt text](launch.png)
+
+## Converting clipboard "x64dbg-binary-copy" to c-shellcode string
+
+Select area
+
+Right click --> Binary ---> Copy
+
+![Alt text](binary_copy)
+
+Go to Plugins --> xshellex --> clipboard to ....
+
+![Alt text](clipboard_to_shellcode.png)
+
