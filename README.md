@@ -1,7 +1,7 @@
 # xshellex
-x64dbg plugin to support shellex c-shellcode converter to HEX
+x64dbg plugin to support shellex c-shellcode converter to HEX. With xshellex you can paste any kind of c-shellcode strings in x64dbg.
 
-Use this plugin as a complement for yummyPaste. yummyPaste dont support some kind of shellcodes, but my shellex program can support all kind of c-shellcodes strings.
+You can use this plugin as a complement for yummyPaste. yummyPaste dont support some kind of shellcodes, but my shellex program can support all kind of c-shellcodes strings.
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
 * https://github.com/0ffffffffh/yummyPaste
 
