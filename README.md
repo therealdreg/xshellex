@@ -1,5 +1,5 @@
 # xshellex
-With xshellex you can paste any kind of c-shellcode strings in x64dbg. 
+With xshellex you can paste any kind of c-shellcode strings in x64dbg. Also you can convert clipboard "x64dbg-binary-copy" to c-shellcode string.
 
 x64dbg plugin to support shellex c-shellcode converter to HEX:
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
