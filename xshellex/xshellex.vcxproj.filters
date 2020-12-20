@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk">
+      <UniqueIdentifier>{446998e0-6d5e-4d23-9249-3d1a0bc7fe31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\capstone">
+      <UniqueIdentifier>{30becf17-3b08-443d-85ad-05fb45775cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\dbghelp">
+      <UniqueIdentifier>{88215581-88d7-47cf-972e-9eaf11d8f670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\DeviceNameResolver">
+      <UniqueIdentifier>{605c6980-440a-42a2-96d1-731aaec67b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\jansson">
+      <UniqueIdentifier>{c6c74972-8272-46f2-ac18-d31b1725b6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\lz4">
+      <UniqueIdentifier>{d0fea627-ee2e-4417-91f8-12aba4fa882f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\TitanEngine">
+      <UniqueIdentifier>{6632d6c2-8818-4b44-aac6-cf8db6572505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\XEDParse">
+      <UniqueIdentifier>{bf231cfd-f78f-4c31-a4e2-261c8fd88e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\yara">
+      <UniqueIdentifier>{4889a9b3-e798-492d-ac42-03445d21e379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pluginsdk\yara\yara">
+      <UniqueIdentifier>{7459ed30-6c92-481c-8add-0be8d296f015}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="x64dbg_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64dbg_plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_dbgfunctions.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_plugin_types.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_plugins.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_assembler.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_debug.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_gui.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_memory.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_misc.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_module.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_pattern.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_register.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\_scriptapi_stack.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\bridgelist.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\bridgemain.h">
+      <Filter>Header Files\pluginsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\arm.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\arm64.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\capstone.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\mips.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\platform.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\ppc.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\sparc.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\systemz.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\x86.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\capstone\xcore.h">
+      <Filter>Header Files\pluginsdk\capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\dbghelp\dbghelp.h">
+      <Filter>Header Files\pluginsdk\dbghelp</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\DeviceNameResolver\DeviceNameResolver.h">
+      <Filter>Header Files\pluginsdk\DeviceNameResolver</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\jansson\jansson.h">
+      <Filter>Header Files\pluginsdk\jansson</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\jansson\jansson_config.h">
+      <Filter>Header Files\pluginsdk\jansson</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\lz4\lz4.h">
+      <Filter>Header Files\pluginsdk\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\lz4\lz4file.h">
+      <Filter>Header Files\pluginsdk\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\lz4\lz4hc.h">
+      <Filter>Header Files\pluginsdk\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara.h">
+      <Filter>Header Files\pluginsdk\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\ahocorasick.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\arena.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\atoms.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\compiler.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\elf.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\error.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\exec.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\exefiles.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\filemap.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\globals.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\hash.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\hex_lexer.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\lexer.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\libyara.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\limits.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\mem.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\modules.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\object.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\parser.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\pe.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\proc.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\re.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\re_lexer.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\rules.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\scan.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\sizedstr.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\strutils.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\types.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\yara\yara\utils.h">
+      <Filter>Header Files\pluginsdk\yara\yara</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\XEDParse\XEDParse.h">
+      <Filter>Header Files\pluginsdk\XEDParse</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\TitanEngine\TitanEngine.h">
+      <Filter>Header Files\pluginsdk\TitanEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginsdk\jansson\jansson_x64dbg.h">
+      <Filter>Header Files\pluginsdk\jansson</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
