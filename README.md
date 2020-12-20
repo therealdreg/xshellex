@@ -39,4 +39,16 @@ Now check if you have installed:
 
 ## Use
 
+Go to Plugins --> xshellex --> launch
+
+Paste your c-shellcode string
+
+Press enter
+
+Press Control+Z
+
+Copy the output to clipboard
+
+Use x64dbg Binary Paste (right click in disasm)
+
 ![Alt text](launch.png)
