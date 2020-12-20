@@ -36,3 +36,7 @@ Now check if you have installed:
 * x64dbg\release\shellex.exe
 * x64dbg\release\x32\plugins\xshellex.dp32
 * x64dbg\release\x64\plugins\xshellex.dp64
+
+## Use
+
+![Alt text](launch.png)
