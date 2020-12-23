@@ -8,6 +8,8 @@ This plugin uses my shellex c-shellcode converter to HEX:
 
 Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/r0.1b/xshellex01b.zip
 
+### x64dbg
+
 Extract the .zip in the x64dbg folder:
 
 Now check if you have installed:
@@ -15,6 +17,24 @@ Now check if you have installed:
 * x64dbg\release\shellex.exe
 * x64dbg\release\x32\plugins\xshellex.dp32
 * x64dbg\release\x64\plugins\xshellex.dp64
+
+### ollydbg
+
+Copy the ollydbg folder content to ollydbg path (I use C:\odbg110)
+
+Now check if you have installed:
+* C:\odbg110\tcc
+* C:\odbg110\shellex.exe
+* C:\odbg110\shellex.dll
+
+### immunity debugger
+
+Copy the immunity folder content to C:\Program Files (x86)\Immunity Inc\Immunity Debugger
+
+Now check if you have installed:
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\tcc
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\shellex.exe
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\shellex.dll
 
 ## Use
 
