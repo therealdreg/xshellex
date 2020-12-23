@@ -34,6 +34,10 @@ Use x64dbg Binary Paste (right click in disasm)
 
 ![Alt text](binary_paste.png)
 
+WARNING: In x64dbg you can use Paste ignore size BUT in ollydbg & immunity debugger you must select first a long area:
+
+
+
 ## Converting clipboard "x64dbg-binary-copy" to c-shellcode string
 
 Select area
