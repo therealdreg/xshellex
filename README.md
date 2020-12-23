@@ -1,12 +1,14 @@
 # xshellex
-With xshellex you can paste any kind of c-shellcode strings in x64dbg. Also you can convert clipboard "x64dbg-binary-copy" to c-shellcode string.
+With xshellex you can paste any kind of c-shellcode strings in x64dbg, ollydbg & immunity debugger. Also you can convert the "binary-copied-clipboard" to c-shellcode string.
 
-x64dbg plugin to support shellex c-shellcode converter to HEX:
+This plugin uses my shellex c-shellcode converter to HEX:
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
 
 ## Install
 
 Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/r0.1b/xshellex01b.zip
+
+### x64dbg
 
 Extract the .zip in the x64dbg folder:
 
@@ -15,6 +17,24 @@ Now check if you have installed:
 * x64dbg\release\shellex.exe
 * x64dbg\release\x32\plugins\xshellex.dp32
 * x64dbg\release\x64\plugins\xshellex.dp64
+
+### ollydbg
+
+Copy the ollydbg folder content to ollydbg path (I use C:\odbg110)
+
+Now check if you have installed:
+* C:\odbg110\tcc
+* C:\odbg110\shellex.exe
+* C:\odbg110\shellex.dll
+
+### immunity debugger
+
+Copy the immunity folder content to C:\Program Files (x86)\Immunity Inc\Immunity Debugger
+
+Now check if you have installed:
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\tcc
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\shellex.exe
+* C:\Program Files (x86)\Immunity Inc\Immunity Debugger\shellex.dll
 
 ## Use
 
@@ -36,7 +56,7 @@ Use x64dbg Binary Paste (right click in disasm)
 
 WARNING: In x64dbg you can use Paste ignore size BUT in ollydbg & immunity debugger you must select first a long area:
 
-
+![Alt text](immunity.png)
 
 ## Converting clipboard "x64dbg-binary-copy" to c-shellcode string
 
