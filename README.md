@@ -58,6 +58,8 @@ WARNING: In x64dbg you can use Paste ignore size BUT in ollydbg & immunity debug
 
 ![Alt text](immunity.png)
 
+![Alt text](ollydbg_paste.png)
+
 ## Converting clipboard "x64dbg-binary-copy" to c-shellcode string
 
 Select area
