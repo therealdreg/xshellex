@@ -4,30 +4,9 @@ With xshellex you can paste any kind of c-shellcode strings in x64dbg. Also you 
 x64dbg plugin to support shellex c-shellcode converter to HEX:
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
 
-You can use this plugin as a complement for yummyPaste. 
-* https://github.com/0ffffffffh/yummyPaste
-
-yummyPaste dont support shellcodes like:
-
-```
-"\x68//sh\x68/bin\x89\xe3"
-```
-
-yummyPaste cant support shellcodes with multi-line + comments:
-
-```
-"\x68"
-"\x7f\x01\x01\x01"  // <- IP:  127.1.1.1
-"\x5e\x66\x68"
-"\xd9\x03"          // <- Port: 55555
-"\x5f\x6a\x66\x58\x99\x6a\x01\x5b\x52\x53\x6a\x02"
-```
-
-But my shellex program can support all kind of c-shellcodes strings.
-
 ## Install
 
-Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/0.1b/release.zip
+Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/r0.1b/xshellex01b.zip
 
 Extract the .zip in the x64dbg folder:
 
@@ -69,7 +48,7 @@ Go to Plugins --> xshellex --> clipboard to ....
 
 ## Why this plugin?
 
-In real world yummyPaste cant works fine, because you have a lot of garbage to filter, just check shellcodes like
+In real world yummyPaste plugin cant works fine, because you have a lot of garbage to filter, just check shellcodes like
 
 http://shell-storm.org/shellcode/files/shellcode-833.php
 ```
