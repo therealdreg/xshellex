@@ -26,6 +26,7 @@ WARNING! this is a POC, the code is CRAP
 */
 
 #include "xshellex.h"
+#include "common.h"
 
 // function prototypes
 
@@ -47,60 +48,6 @@ int hMenuDump;
 int hMenuStack;
 
 
-void
-GetCurrentPath(WCHAR* current_path)
-{
-    wchar_t* tmp_ptr;
-
-    ZeroMemory(current_path, sizeof(wchar_t) * MAX_PATH);
-
-    GetModuleFileNameW(GetModuleHandleW(NULL), current_path, sizeof(wchar_t) * MAX_PATH);
-    tmp_ptr = current_path;
-    tmp_ptr += wcslen(current_path);
-    while (tmp_ptr[0] != '\\')
-    {
-        tmp_ptr--;
-        if (tmp_ptr <= current_path)
-        {
-            ZeroMemory(current_path, sizeof(wchar_t) * MAX_PATH);
-            return;
-        }
-    }
-    tmp_ptr[1] = 0;
-}
-
-
-
-void ExecShellex(wchar_t* clipb)
-{
-    static wchar_t current_path[0x1000] = { 0 };
-    size_t size_str;
-
-    if (current_path[0] == '\0')
-    {
-        GetCurrentPath(current_path);
-        size_str = wcslen(current_path);
-        if (size_str > 6)
-        {
-            current_path[size_str - 5] = L'\0';
-            wcscat(current_path, L"\\shellex.exe");
-        }
-        else
-        {
-            current_path[0] = L'\0';
-        }
-    }
-
-    if (current_path[0] == '\0')
-    {
-        MessageBoxA(NULL, "error getting current path", "error getting current path", MB_OK | MB_ICONWARNING);
-        return;
-    }
-
-    //MessageBoxW(NULL, current_path, current_path, MB_OK | MB_ICONWARNING);
-
-    ShellExecuteW(NULL, L"open", current_path, (clipb == NULL) ? L"-w" : clipb, NULL, SW_SHOWNORMAL);
-}
 
 /*====================================================================================
   Main entry function for a DLL file  - required.
@@ -205,8 +152,6 @@ DLL_EXPORT void plugsetup(PLUG_SETUPSTRUCT* setupStruct)
 --------------------------------------------------------------------------------------*/
 extern "C" __declspec(dllexport) void CBMENUENTRY(CBTYPE cbType, PLUG_CB_MENUENTRY* info)
 {
-    static wchar_t clipb[0x1000];
-
     switch(info->hEntry)
     {
         case 3:
@@ -214,32 +159,7 @@ extern "C" __declspec(dllexport) void CBMENUENTRY(CBTYPE cbType, PLUG_CB_MENUENT
         break;
 
         case 4:
-            if (clipb[0] != L'\0')
-            {
-                memset(clipb, 0, sizeof(clipb));
-            }
-
-            if (OpenClipboard(NULL))
-            {
-                HANDLE hClipboardData = GetClipboardData(CF_UNICODETEXT);
-                if (hClipboardData)
-                {
-                    WCHAR *pchData = (WCHAR*)GlobalLock(hClipboardData);
-                    if (pchData)
-                    {
-                        wcscpy(clipb, L"-w -h ");
-                        wcscat(clipb, pchData);
-                        GlobalUnlock(hClipboardData);
-                    }
-                }
-                CloseClipboard();
-
-                if (clipb[0] != L'\0')
-                {
-                    ExecShellex(clipb);
-                }
-            }
-
+            ExecShellexClipboard();
         break;
     }
 }
