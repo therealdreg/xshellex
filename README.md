@@ -8,9 +8,11 @@ This plugin uses my shellex c-shellcode converter to HEX:
 
 Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/r0.1b/xshellex01b.zip
 
+Extract the .zip
+
 ### x64dbg
 
-Extract the .zip in the x64dbg folder:
+Copy release folder in the x64dbg folder.
 
 Now check if you have installed:
 * x64dbg\release\tcc
