@@ -74,7 +74,7 @@ Go to Plugins --> xshellex --> clipboard to ....
 
 ## Why this plugin?
 
-In real world yummyPaste plugin cant works fine, because you have a lot of garbage to filter, just check shellcodes like
+In real world yummyPaste plugin ( https://github.com/0ffffffffh/yummyPaste ) cant works fine, because you have a lot of garbage to filter, just check shellcodes like
 
 http://shell-storm.org/shellcode/files/shellcode-833.php
 ```
