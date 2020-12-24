@@ -105,5 +105,5 @@ Visual Studio 2013
 * https://my.visualstudio.com/Downloads?q=visual%20studio%202013&wt.mc_id=o~msft~vscom~older-downloads
 * https://go.microsoft.com/fwlink/?LinkId=532495&clcid=0x409
 
-WARNING: To convert ollydbg plugin to immunity debugger plugin just use auxtools/PluginFix with ollydbg plugin dll generated
+WARNING: To convert ollydbg plugin to immunity debugger plugin just use auxtools\PluginFix
 
