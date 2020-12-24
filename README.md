@@ -3,7 +3,7 @@
 
 With xshellex you can paste any kind of c-shellcode strings in x64dbg, ollydbg & immunity debugger. Also you can convert the "binary-copied-clipboard" to c-shellcode string.
 
-This plugin uses my shellex c-shellcode converter to HEX:
+This plugin uses my c-shellcode converter to HEX:
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
 
 ## Install
@@ -14,7 +14,7 @@ Extract the .zip
 
 ### x64dbg
 
-Copy release folder in the x64dbg folder.
+Copy the release folder in the x64dbg folder.
 
 Now check if you have installed:
 * x64dbg\release\tcc
