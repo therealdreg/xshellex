@@ -3,7 +3,7 @@
 
 With xshellex you can paste any kind of c-shellcode strings in x64dbg, ollydbg & immunity debugger. Also you can convert the "binary-copied-clipboard" to c-shellcode string.
 
-This plugin uses my c-shellcode converter to HEX:
+This plugin uses my c-shellcode converter to HEX (handy tool for paste & execute shellcodes in gdb, windbg, radare2, ollydbg, x64dbg, immunity debugger & 010 editor):
 * https://github.com/David-Reguera-Garcia-Dreg/shellex
 
 ## Install
