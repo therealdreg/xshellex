@@ -6,11 +6,11 @@ With xshellex you can paste any kind of c-shellcode strings in x64dbg, ollydbg &
 Please, consider make a donation: https://github.com/sponsors/therealdreg
 
 This plugin uses shellex, my handy "C-shellcode to hex converter" tool for paste & execute shellcodes in gdb, windbg, radare2, ollydbg, 010 editor etc.
-* https://github.com/David-Reguera-Garcia-Dreg/shellex
+* https://github.com/therealdreg/shellex
 
 ## Install
 
-Just download https://github.com/David-Reguera-Garcia-Dreg/xshellex/releases/download/r0.1b/xshellex01b.zip
+Just download https://github.com/therealdreg/xshellex/releases/download/r0.1b/xshellex01b.zip
 
 Extract the .zip
 
